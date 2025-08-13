@@ -1,0 +1,134 @@
+<svg version="1.1" baseProfile="full" width="454.8" height="320.0" viewBox="0 0 454.75 320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+    <desc >#.component: fill=#8f8 dashed
+    #.class: fill=pink
+    #.service: fill=pink
+    #.UI: fill=pink
+
+    [&lt;component&gt; Listar Produtos|
+        [&lt;UI&gt;Renderizar]
+    ]-[&lt;class&gt; Apresentação]
+
+    [&lt;component&gt; Listar Produtos|
+        [&lt;UI&gt;Renderizar]
+    ]-[&lt;class&gt; useFetchProducts]--&gt;[&lt;class&gt; Buscar dados]
+
+    [&lt;component&gt; Listar Produtos|
+        [&lt;UI&gt;Renderizar]
+    ]-[&lt;class&gt; UI]
+
+    [&lt;class&gt; Apresentação]&lt;--[&lt;class&gt; ProductDTO]
+    [&lt;class&gt; useFetchProducts]&lt;--[&lt;class&gt; ProductDTO]
+
+
+    </desc>
+    <g stroke-width="1.0" text-align="left" font="12pt Helvetica, Arial, sans-serif" font-size="12pt" font-family="Helvetica" font-weight="bold" font-style="normal">
+        <g font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" stroke="#33322E">
+            <g stroke="transparent" fill="transparent">
+                <rect x="0.0" y="0.0" height="320.0" width="454.8" stroke="none"></rect>
+            </g>
+            <g transform="translate(8, 8)" fill="#33322E">
+                <g transform="translate(20, 20)" fill="#33322E" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal">
+                    <path d="M171.3 93.0 L61 140 L61 160 L61.0 160.0 " fill="none" class="fragment" data-fragment-index="0"></path>
+                    <path d="M248.8 120.0 L248.75 140 L248.75 160 L248.8 160.0 " fill="none" class="fragment" data-fragment-index="0"></path>
+                    <g stroke-dasharray="6 6">
+                        <path d="M257.6 192.0 L268.75 212 L268.75 225.33333333333334 L268.8 225.3 " fill="none" class="fragment" data-fragment-index="0"></path>
+                    </g>
+                    <path d="M263.4 218.7 L268.8 225.3 L274.1 218.7 L268.8 232.0 Z" class="fragment" data-fragment-index="0"></path>
+                    <path d="M326.3 106.3 L382.75 140 L382.75 160 L382.8 160.0 " fill="none" class="fragment" data-fragment-index="0"></path>
+                    <g stroke-dasharray="6 6">
+                        <path d="M61.0 198.7 L61 212 L72.11111111111111 232 L72.1 232.0 " fill="none" class="fragment" data-fragment-index="0"></path>
+                    </g>
+                    <path d="M66.3 205.3 L61.0 198.7 L55.7 205.3 L61.0 192.0 Z" class="fragment" data-fragment-index="0"></path>
+                    <g stroke-dasharray="6 6">
+                        <path d="M207.9 194.8 L170.5 212 L120.77777777777777 232 L120.8 232.0 " fill="none" class="fragment" data-fragment-index="0"></path>
+                    </g>
+                    <path d="M204.1 202.4 L207.9 194.8 L199.6 192.7 L214.0 192.0 Z" class="fragment" data-fragment-index="0"></path>
+                    <g data-name="Listar Produtos">
+                        <g fill="#8f8" stroke="#33322E" stroke-dasharray="6 6" data-name="Listar Produtos">
+                            <rect x="171.3" y="0.0" height="120.0" width="155.0" data-name="Listar Produtos"></rect>
+                            <path d="M171.3 32.0 L326.3 32.0" fill="none" data-name="Listar Produtos"></path>
+                        </g>
+                        <g transform="translate(171.25, 0)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" data-name="Listar Produtos">
+                            <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Listar Produtos">
+                                <text x="69.5" y="14.1" stroke="none" text-anchor="middle" data-name="Listar Produtos">Listar Produtos</text>
+
+                            </g>
+                        </g>
+                        <g transform="translate(171.25, 32)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Listar Produtos" class="fragment" data-fragment-index="0">
+                            <g transform="translate(8, 8)" fill="#33322E" data-name="Listar Produtos">
+                                <g transform="translate(20, 20)" data-name="Listar Produtos">
+                                    <g data-name="Renderizar">
+                                        <g fill="pink" stroke="#33322E" data-name="Renderizar">
+                                            <rect x="0.0" y="0.0" height="32.0" width="99.0" data-name="Renderizar"></rect>
+                                        </g>
+                                        <g transform="translate(0, 0)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Renderizar">
+                                            <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Renderizar">
+                                                <text x="41.5" y="14.1" stroke="none" text-anchor="middle" data-name="Renderizar">Renderizar</text>
+
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g data-name="Apresentação" class="fragment" data-fragment-index="0">
+                        <g fill="pink" stroke="#33322E" data-name="Apresentação">
+                            <rect x="0.0" y="160.0" height="32.0" width="122.0" data-name="Apresentação"></rect>
+                        </g>
+                        <g transform="translate(0, 160)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Apresentação">
+                            <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Apresentação">
+                                <text x="53.0" y="14.1" stroke="none" text-anchor="middle" data-name="Apresentação">Apresentação</text>
+
+                            </g>
+                        </g>
+                    </g>
+                    <g data-name="useFetchProducts" class="fragment" data-fragment-index="0">
+                        <g fill="pink" stroke="#33322E" data-name="useFetchProducts">
+                            <rect x="170.8" y="160.0" height="32.0" width="156.0" data-name="useFetchProducts"></rect>
+                        </g>
+                        <g transform="translate(170.75, 160)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="useFetchProducts">
+                            <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="useFetchProducts">
+                                <text x="70.0" y="14.1" stroke="none" text-anchor="middle" data-name="useFetchProducts">useFetchProducts</text>
+
+                            </g>
+                        </g>
+                    </g>
+                    <g data-name="Buscar dados" class="fragment" data-fragment-index="0">
+                        <g fill="pink" stroke="#33322E" data-name="Buscar dados">
+                            <rect x="207.8" y="232.0" height="32.0" width="122.0" data-name="Buscar dados"></rect>
+                        </g>
+                        <g transform="translate(207.75, 232)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Buscar dados">
+                            <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Buscar dados">
+                                <text x="53.0" y="14.1" stroke="none" text-anchor="middle" data-name="Buscar dados">Buscar dados</text>
+
+                            </g>
+                        </g>
+                    </g>
+                    <g data-name="UI" class="fragment" data-fragment-index="0">
+                        <g fill="pink" stroke="#33322E" data-name="UI">
+                            <rect x="366.8" y="160.0" height="32.0" width="32.0" data-name="UI"></rect>
+                        </g>
+                        <g transform="translate(366.75, 160)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="UI">
+                            <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="UI">
+                                <text x="8.0" y="14.1" stroke="none" text-anchor="middle" data-name="UI">UI</text>
+
+                            </g>
+                        </g>
+                    </g>
+                    <g data-name="ProductDTO" class="fragment" data-fragment-index="0">
+                        <g fill="pink" stroke="#33322E" data-name="ProductDTO">
+                            <rect x="25.5" y="232.0" height="32.0" width="111.0" data-name="ProductDTO"></rect>
+                        </g>
+                        <g transform="translate(25.5, 232)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ProductDTO">
+                            <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="ProductDTO">
+                                <text x="47.5" y="14.1" stroke="none" text-anchor="middle" data-name="ProductDTO">ProductDTO</text>
+
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
