@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="author" content="Vinícius Campitelli, eu@viniciuscampitelli.com">
 
-        <title>Qualidade de Código no Frontend</title>
+        <title>Aplicando boas práticas no Frontend</title>
 
         <link rel="stylesheet" href="reveal.js/dist/reset.css">
         <link rel="stylesheet" href="reveal.js/dist/reveal.css">
@@ -19,21 +19,27 @@
         <link rel="stylesheet"
               href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=JetBrains+Mono&display=swap">
         <link rel="stylesheet" href="assets/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.34.1/tabler-icons.min.css"
+              integrity="sha512-s0zOeW/zxh8f817uykbgBqmx1dwmdvWwQYamh+lU9NzP8jeQ/ikNPE9dBK+C55A5WUtOetZAI09tLxKIj0r9WQ=="
+              crossorigin="anonymous" referrerpolicy="no-referrer">
     </head>
     <body>
         <div class="reveal">
             <div class="slides">
                 <section id="first-slide">
-                    <h1 class="title">Qualidade de Código<br>no Frontend</h1>
+                    <h1 class="title">
+                        <i class="ti ti-sparkles"></i>
+                        Aplicando boas práticas<br>no Frontend
+                    </h1>
                     <h2>Vinícius Campitelli</h2>
                 </section>
 
                 <section> <!-- Sobre -->
-                    <section data-auto-animate data-auto-animate-restart>
-                        <h1>Sobre</h1>
+                    <section>
+                        <h1><i class="ti ti-user"></i> Sobre</h1>
                     </section>
-                    <section data-auto-animate>
-                        <h1>Sobre</h1>
+                    <section>
+                        <h1><i class="ti ti-user"></i> Sobre</h1>
                         <h2>Sobre mim</h2>
                         <div id="about-me">
                             <div class="text-center">
@@ -148,15 +154,9 @@
                             </div>
                         </div>
                     </section>
-                </section> <!-- Sobre -->
-
-                <section> <!-- Preparação -->
-                    <section data-auto-animate data-auto-animate-restart>
-                        <h1 class="title">Preparação</h1>
-                    </section>
                     <section data-auto-animate>
-                        <h1 class="title">Preparação</h1>
-                        <p class="fw-bold">Slides</p>
+                        <h1><i class="ti ti-user"></i> Sobre</h1>
+                        <h2>Slides</h2>
                         <div class="d-flex justify-start items-center">
                             <div style="flex-shrink: 0">
                                 <a href="https://github.com/vcampitelli/slides-boas-praticas-frontend" target="_blank"
@@ -173,67 +173,25 @@
                             </div>
                         </div>
                     </section>
-                    <section data-auto-animate id="preparacao-maos-na-massa">
-                        <h1 class="title">Preparação</h1>
-                        <p class="fw-bold">Mãos na massa</p>
-                        <ol>
-                            <li>
-                                Certifique-se que você tenha o
-                                <a href="https://docs.docker.com/get-docker" target="_blank" rel="noopener">
-                                    Docker
-                                </a>
-                                e o
-                                <a href="https://docs.docker.com/compose" target="_blank" rel="noopener">
-                                    Docker Compose
-                                </a>
-                                instalados
-                            </li>
-                            <li>
-                                Clone o repositório
-                                <a href="https://github.com/vcampitelli/slides-boas-praticas-frontend" target="_blank"
-                                   rel="noopener">vcampitelli/slides-boas-praticas-frontend</a> do GitHub
-                                <pre><code class="shell" data-trim>
-                                    $ git clone --recursive git@github.com/vcampitelli/slides-boas-praticas-frontend.git
-                                </code></pre>
-                            </li>
-                            <li>
-                                Inicialize os <em>containers</em> da aplicação
-                                <pre><code class="shell" data-trim>
-                                    $ cd 2025/01-qualidade-codigo-frontend/demo
-                                    $ docker compose up -d
-                                </code></pre>
-                            </li>
-                            <li>
-                                Acesse <a href="http://localhost:5173" target="_blank" rel="noopener">localhost:5173</a>
-                                em seu navegador
-                            </li>
-                        </ol>
-                        <div class="mt-1 text-right fs-small opacity-50">
-                            <a href="#/maos-na-massa">Ir para o slide <em>"Mãos na massa"</em> &#8594;</a>
-                        </div>
-                    </section>
-                </section> <!-- Preparação -->
+                </section> <!-- Sobre -->
 
                 <section> <!-- Linting -->
                     <section data-auto-animate data-auto-animate-restart>
-                        <h1 class="title">Linting</h1>
+                        <h1 class="title">
+                            <i class="ti ti-source-code"></i> <i>Linting</i>
+                        </h1>
                     </section>
                     <section data-auto-animate>
-                        <h1 class="title">Linting</h1>
+                        <h1 class="title">
+                            <i class="ti ti-source-code"></i> <i>Linting</i>
+                        </h1>
                         <p>
                             Primeiro, instale uma ferramenta de <em>linting</em>, como o
                             <a href="https://eslint.org/" target="_blank" rel="noopener">eslint</a>,
                             <a href="https://prettier.io/" target="_blank" rel="noopener">prettier</a> ou
                             <a href="https://biomejs.dev/" target="_blank" rel="noopener">biome</a>
                         </p>
-                        <p>
-                            Aqui, usamos <em>eslint</em>, então instale-o junto com o conjunto de regras
-                            <a href="https://github.com/somosyampi/eslint-config" target="_blank" rel="noopener">@somosyampi/eslint-config</a>
-                        </p>
-                    </section>
-                    <section data-auto-animate>
-                        <h1 class="title">Linting</h1>
-                        <p>
+                        <p class="fragment">
                             Execute a ferramenta de correção automática (como <code>eslint --fix</code>), corrija
                             manualmente possíveis erros que não puderam ser resolvidos, teste bem e abra uma PR somente
                             com as correções de seu projeto
@@ -243,10 +201,14 @@
 
                 <section> <!-- Conceitos -->
                     <section data-auto-animate data-auto-animate-restart>
-                        <h1>Conceitos</h1>
+                        <h1>
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                     </section>
                     <section data-auto-animate>
-                        <h1 class="title">Conceitos</h1>
+                        <h1 class="title">
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                         <blockquote>
                             Any fool can write code that a computer can understand. Good programmers write code that
                             humans can understand.
@@ -256,7 +218,9 @@
                            class="reference">Refactoring: Improving the Design of Existing Code</a>
                     </section>
                     <section>
-                        <h1>Conceitos</h1>
+                        <h1>
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                         <h2>Coesão</h2>
                         <blockquote>
                             Relacionamento que os membros de um módulo possuem. Códigos coesos são aqueles de relação
@@ -270,7 +234,9 @@
                         </a>
                     </section>
                     <section>
-                        <h1>Conceitos</h1>
+                        <h1>
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                         <h2>Acoplamento</h2>
                         <blockquote>
                             Relacionamento entre os módulos. Indica quanto um módulo depende de outro para funcionar.
@@ -284,7 +250,9 @@
                     </section>
 
                     <section data-auto-animate>
-                        <h1>Conceitos</h1>
+                        <h1>
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                         <h2>SOLID</h2>
                         <p>
                             Princípios que foram apresentados originalmente por Robert Martin em 2000 em seu artigo
@@ -326,7 +294,9 @@
                         </div>
                     </section>
                     <section id="solid-s" data-auto-animate>
-                        <h1>Conceitos</h1>
+                        <h1>
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                         <h2>SOLID</h2>
                         <h3 data-id="title-solid-s"><em>Single Responsibility Principle</em></h3>
                         <p>Uma unidade (classe/módulo/função) deve ter <b>uma única razão para mudar</b></p>
@@ -336,7 +306,9 @@
                         </p>
                     </section>
                     <section id="solid-o" data-auto-animate>
-                        <h1>Conceitos</h1>
+                        <h1>
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                         <h2>SOLID</h2>
                         <h3 data-id="title-solid-o"><em>Open-Closed Principle</em></h3>
                         <p>Seu sistema deve estar aberto para extensão e fechado para modificação</p>
@@ -344,7 +316,7 @@
                             Exemplo: ao adicionar um novo <em>gateway</em> de pagamento, em quantos lugares da
                             aplicação precisaremos mexer?
                         </p>
-                        <pre><code class="vue clipboard" data-trim data-line-numbers>
+                        <pre><code class="vue" data-trim data-line-numbers>
                             &lt;button v-if="gateway-enabled-pagseguro">PagSeguro&lt;/button&gt;
                             &lt;button v-if="gateway-enabled-paypal">PayPal&lt;/button&gt;
                             &lt;button v-if="gateway-enabled-pagarme">Pagar.me&lt;/button&gt;
@@ -353,11 +325,13 @@
                         </code></pre>
                     </section>
                     <section id="solid-l" data-auto-animate>
-                        <h1>Conceitos</h1>
+                        <h1>
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                         <h2>SOLID</h2>
                         <h3 data-id="title-solid-l"><em>Liskov Substitution Principle</em></h3>
                         <p>Uma <u>classe</u> filha deve respeitar os comportamentos e restrições da classe pai</p>
-                        <pre><code class="vue clipboard" data-trim data-line-numbers>
+                        <pre><code class="vue" data-trim data-line-numbers>
                             async function createPagSeguroTransaction() { /* ... */ }
                             async function createPayPalTransaction() { /* ... */ }
 
@@ -374,11 +348,13 @@
                         </code></pre>
                     </section>
                     <section id="solid-i" data-auto-animate>
-                        <h1>Conceitos</h1>
+                        <h1>
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                         <h2>SOLID</h2>
                         <h3 data-id="title-solid-i"><em>Interface Segregation Principle</em></h3>
                         <p>Abstrações não podem ser genéricas demais</p>
-                        <pre><code class="ts clipboard" data-trim data-line-numbers>
+                        <pre><code class="ts" data-trim data-line-numbers>
                             interface Gateway {
                                 create: (data: any) => Promise&lt;Transaction&gt;;
                                 update: (id: number, data: Transaction) => Promise&lt;boolean&gt;;
@@ -393,13 +369,15 @@
                         </code></pre>
                     </section>
                     <section id="solid-d" data-auto-animate>
-                        <h1>Conceitos</h1>
+                        <h1>
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                         <h2>SOLID</h2>
                         <h3 data-id="title-solid-d"><em>Dependency Inversion Principle</em></h3>
                         <p>Inverta o uso de dependências para facilitar manutenção e testes</p>
                         <div class="d-flex justify-start">
                             <div>
-                                <pre><code class="vue clipboard" data-trim data-line-numbers>
+                                <pre><code class="vue" data-trim data-line-numbers>
                                     // Page.vue
                                     import mixpanel from 'mixpanel-browser';
 
@@ -408,7 +386,7 @@
                                 <p class="caption">Código acoplado ao mixpanel</p>
                             </div>
                             <div>
-                                <pre><code class="vue clipboard" data-trim data-line-numbers>
+                                <pre><code class="vue" data-trim data-line-numbers>
                                     // Page.vue
                                     import useTracking from '@/tracking';
 
@@ -426,7 +404,9 @@
                     </section>
 
                     <section>
-                        <h1>Conceitos</h1>
+                        <h1>
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                         <h2><em>Object Calisthenics</em></h2>
                         <p>
                             Conjunto de 9 regras inventadas por Jeff Bay no livro <em>&ldquo;The ThoughtWorks
@@ -455,7 +435,9 @@
                         </div>
                     </section>
                     <section>
-                        <h1>Conceitos</h1>
+                        <h1>
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                         <h2><em>Clean Architecture</em></h2>
                         <p>
                             Abordagem para produzir sistemas testáveis e independentes de <em>frameworks</em>, UI,
@@ -512,7 +494,9 @@
                         </a>
                     </section>
                     <section>
-                        <h1>Conceitos</h1>
+                        <h1>
+                            <i class="ti ti-book"></i> Conceitos
+                        </h1>
                         <h2><em>Overengineering</em> / KISS / YAGNI</h2>
                         <p>
                             Nem sempre começamos com a solução perfeita!
@@ -534,10 +518,14 @@
 
                 <section> <!-- O Problema -->
                     <section data-auto-animate data-auto-animate-restart>
-                        <h1 class="title">O problema</h1>
+                        <h1 class="title">
+                            <i class="ti ti-bandage"></i> O problema
+                        </h1>
                     </section>
                     <section id="o-problema" data-auto-animate>
-                        <h1 class="title">O problema</h1>
+                        <h1 class="title">
+                            <i class="ti ti-bandage"></i> O problema
+                        </h1>
                         <p>Uma página padrão geralmente possui o seguinte fluxo:</p>
                         <div class="d-flex">
                             <div style="width: 400px; flex-shrink: 0;">
@@ -557,12 +545,14 @@
                         </div>
                     </section>
                     <section data-auto-animate>
-                        <h1 class="title">O problema</h1>
+                        <h1 class="title">
+                            <i class="ti ti-bandage"></i> O problema
+                        </h1>
                         <div class="d-flex">
                             <div>
                                 <p>Exemplo de código:</p>
                                 <pre>
-                                    <code class="vue clipboard"
+                                    <code class="vue"
                                           data-trim
                                           data-line-numbers="all|9,15,35-37|11-17|20,24,32-34"
                                           data-fragment-index="0"
@@ -630,7 +620,9 @@
                         </div>
                     </section>
                     <section>
-                        <h1 class="title">Proposta de Solução</h1>
+                        <h1 class="title">
+                            <i class="ti ti-bandage-filled"></i> Proposta de Solução
+                        </h1>
                         <figure class="text-center">
                             <img src="assets/img/frontend/fluxo-2.svg" alt="Uso de Use Cases" class="insert-svg">
                         </figure>
@@ -644,11 +636,15 @@
                 <section> <!-- Parte 1: UseCase -->
                     <section data-auto-animate data-auto-animate-restart>
                         <h1>Refatoração</h1>
-                        <h2>Abstraindo requisições da API</h2>
+                        <h2>
+                            <i class="ti ti-transfer-in"></i> Abstraindo requisições da API
+                        </h2>
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Abstraindo requisições da API</h2>
+                        <h2>
+                            <i class="ti ti-transfer-in"></i> Abstraindo requisições da API
+                        </h2>
                         <p class="scenario">
                             Cenário: o <em>backend</em> irá modificar a rota de listagem de produtos: renomeando-a,
                             pedindo mais um parâmetro e retornando os dados em um outro campo
@@ -694,7 +690,9 @@
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Abstraindo requisições da API</h2>
+                        <h2>
+                            <i class="ti ti-transfer-in"></i> Abstraindo requisições da API
+                        </h2>
                         <p>
                             Ao invés de ter vários <code>fetch()</code> espalhados pela aplicação, extraia-os das
                             páginas e crie uma camada de isolamento
@@ -707,24 +705,15 @@
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Abstraindo requisições da API</h2>
-                        <p class="fw-bold">Exercício:</p>
-                        <ul>
-                            <li>
-                                Altere o <code>ProductList.vue</code> e crie um <em>Use Case</em> para buscar os dados
-                                da API
-                            </li>
-                        </ul>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>Refatoração</h1>
-                        <h2>Abstraindo requisições da API</h2>
+                        <h2>
+                            <i class="ti ti-transfer-in"></i> Abstraindo requisições da API
+                        </h2>
                         <p data-id="usecase-intro">
                             Vamos criar <em>Use Cases</em> para <b>cada situação</b> de busca de dados da API
                         </p>
                         <pre>
                             <kbd>useCases/fetchProducts.ts</kbd>
-                            <code class="ts clipboard" data-trim data-line-numbers>
+                            <code class="ts" data-trim data-line-numbers>
                                 export type FetchProductsResponse = {
                                     page: number;
                                     total: number;
@@ -740,13 +729,15 @@
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Abstraindo requisições da API</h2>
+                        <h2>
+                            <i class="ti ti-transfer-in"></i> Abstraindo requisições da API
+                        </h2>
                         <p data-id="usecase-intro">
                             Vamos criar <em>Use Cases</em> para <b>cada situação</b> de busca de dados da API
                         </p>
                         <pre>
                             <kbd>useCases/fetchProductsByCategory.ts</kbd>
-                            <code class="ts clipboard" data-trim data-line-numbers>
+                            <code class="ts" data-trim data-line-numbers>
                                 export type FetchProductsByCategoryResponse = FetchProductsResponse & {
                                     id_category: number;
                                 };
@@ -760,9 +751,11 @@
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Abstraindo requisições da API</h2>
+                        <h2>
+                            <i class="ti ti-transfer-in"></i> Abstraindo requisições da API
+                        </h2>
                         <p>Refatore as páginas para usar os <em>Use Cases</em> ao invés de requisições diretas</p>
-                        <pre data-id="pre"><code class="vue clipboard" data-trim data-line-numbers>
+                        <pre data-id="pre"><code class="vue" data-trim data-line-numbers>
                             &lt;script setup&gt;
                             // ...
 
@@ -779,9 +772,11 @@
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Abstraindo requisições da API</h2>
+                        <h2>
+                            <i class="ti ti-transfer-in"></i> Abstraindo requisições da API
+                        </h2>
                         <p>Refatore as páginas para usar os <em>Use Cases</em> ao invés de requisições diretas</p>
-                        <pre data-id="pre"><code class="vue clipboard" data-trim data-line-numbers>
+                        <pre data-id="pre"><code class="vue" data-trim data-line-numbers>
                             &lt;script setup&gt;
                             // ...
                             import fetchProductsUseCase from '@usecases/fetchProducts.ts';
@@ -801,11 +796,15 @@
                 <section> <!-- Parte 2: DTO -->
                     <section data-auto-animate data-auto-animate-restart>
                         <h1>Refatoração</h1>
-                        <h2>Abstraindo respostas da API</h2>
+                        <h2>
+                            <i class="ti ti-transfer-out invert"></i> Abstraindo respostas da API
+                        </h2>
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Abstraindo respostas da API</h2>
+                        <h2>
+                            <i class="ti ti-transfer-out invert"></i> Abstraindo respostas da API
+                        </h2>
                         <p class="scenario">
                             Cenário: o <em>backend</em> irá mudar e retornar o preço em centavos para evitar problemas
                             de arredondamento
@@ -840,7 +839,9 @@
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Abstraindo respostas da API</h2>
+                        <h2>
+                            <i class="ti ti-transfer-out invert"></i> Abstraindo respostas da API
+                        </h2>
                         <p>Vamos usar <b>DTO</b>s para desacoplar o <em>frontend</em> da resposta da API</p>
                         <blockquote>
                             DTO (Data Transfer Object) é um padrão de software voltado para a transferência de dados
@@ -854,7 +855,9 @@
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Abstraindo respostas da API</h2>
+                        <h2>
+                            <i class="ti ti-transfer-out invert"></i> Abstraindo respostas da API
+                        </h2>
                         <p>Vamos usar <b>DTO</b>s para desacoplar o <em>frontend</em> da resposta da API</p>
                         <div class="d-flex justify-start items-center">
                             <div>
@@ -896,23 +899,15 @@
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Abstraindo respostas da API</h2>
-                        <p class="fw-bold">Exercício:</p>
-                        <ul>
-                            <li>
-                                Refatore a aplicação para depender do <code>ProductDTO</code>, e não da resposta da API
-                            </li>
-                        </ul>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>Refatoração</h1>
-                        <h2>Abstraindo respostas da API</h2>
+                        <h2>
+                            <i class="ti ti-transfer-out invert"></i> Abstraindo respostas da API
+                        </h2>
                         <p>
                             Refatore a aplicação para depender do <code>ProductDTO</code>, e não da resposta da API
                         </p>
                         <pre>
                             <kbd>useCases/fetchProducts.ts</kbd>
-                            <code class="ts clipboard" data-trim data-line-numbers>
+                            <code class="ts" data-trim data-line-numbers>
                                 export type ApiResponse = {
                                     page: number;
                                     total: number;
@@ -940,11 +935,15 @@
                 <section> <!-- Parte 3: Presenter -->
                     <section data-auto-animate data-auto-animate-restart>
                         <h1>Refatoração</h1>
-                        <h2>Isolando regras de renderização</h2>
+                        <h2>
+                            <i class="ti ti-eye-check"></i> Isolando regras de renderização
+                        </h2>
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Isolando regras de renderização</h2>
+                        <h2>
+                            <i class="ti ti-eye-check"></i> Isolando regras de renderização
+                        </h2>
                         <p>
                             Esse componente da <em>Clean Architecture</em> é responsável por transformar os dados vindo
                             dos <em>Use Cases</em> para a apresentação na <em>interface</em>
@@ -956,9 +955,11 @@
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Isolando regras de renderização</h2>
+                        <h2>
+                            <i class="ti ti-eye-check"></i> Isolando regras de renderização
+                        </h2>
                         <pre>
-                            <code class="tsx clipboard" data-trim data-line-numbers>
+                            <code class="tsx" data-trim data-line-numbers>
                                 export class ProductPresenter {
                                     constructor(private user: User) {}
 
@@ -978,27 +979,20 @@
                             </code>
                         </pre>
                     </section>
-                    <section data-auto-animate>
-                        <h1>Refatoração</h1>
-                        <h2>Isolando regras de renderização</h2>
-                        <p class="fw-bold">Exercício:</p>
-                        <ul>
-                            <li>
-                                Refatore o <code>ProductList.vue</code> para que a formatação de preço esteja em um
-                                <em>Presenter</em>
-                            </li>
-                        </ul>
-                    </section>
                 </section> <!-- Parte 3: Presenter -->
 
                 <section>  <!-- Parte 5: Isolando a Biblioteca de UI -->
                     <section data-auto-animate data-auto-animate-restart>
                         <h1>Refatoração</h1>
-                        <h2>Isolando a Biblioteca de UI</h2>
+                        <h2>
+                            <i class="ti ti-paint"></i> Isolando a Biblioteca de UI
+                        </h2>
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Isolando a Biblioteca de UI</h2>
+                        <h2>
+                            <i class="ti ti-paint"></i> Isolando a Biblioteca de UI
+                        </h2>
                         <p>
                             Manter a aplicação desacoplada da biblioteca de UI facilita futuras manutenções e permite
                             que a aplicação continue funcionando mesmo se a biblioteca precisar ser alterada ou
@@ -1007,7 +1001,9 @@
                     </section>
                     <section data-auto-animate>
                         <h1>Refatoração</h1>
-                        <h2>Isolando a Biblioteca de UI</h2>
+                        <h2>
+                            <i class="ti ti-paint"></i> Isolando a Biblioteca de UI
+                        </h2>
                         <p>
                             Para isso, você pode utilizar bibliotecas como
                             <a href="https://ui.shadcn.com/" target="_blank" rel="noopener"><code>shadcn/ui</code></a>,
@@ -1020,37 +1016,18 @@
                             </a>
                         </p>
                     </section>
-                    <section data-auto-animate>
-                        <h1>Refatoração</h1>
-                        <h2>Isolando a Biblioteca de UI</h2>
-                        <p class="fw-bold">Exercício:</p>
-                        <ul>
-                            <li>
-                                Crie o componente <code>src/components/Button.vue</code>
-                            </li>
-                            <li>
-                                Faça ele utilizar o
-                                <a href="https://vuetifyjs.com/en/components/buttons/" target="_blank"
-                                   rel="noopener">botão do vuetify</a> <em>(que já está configurado)</em>
-                            </li>
-                            <li>
-                                Aceite uma propriedade <code>size</code> com os valores
-                                <kbd>xs</kbd>, <kbd>sm</kbd>, <kbd>md</kbd>, <kbd>lg</kbd> e <kbd>xl</kbd>, e
-                                faça o componente traduzi-los para os aceitos pelo <em>vuetify</em>
-                            </li>
-                            <li>
-                                Faça o <code>ProductList.vue</code> usar esse componente nos botões <em>"Comprar"</em>
-                            </li>
-                        </ul>
-                    </section>
                 </section> <!-- Parte 5: Isolando a Biblioteca de UI -->
 
                 <section> <!-- Dicas gerais -->
                     <section data-auto-animate data-auto-animate-restart>
-                        <h1 class="title">Dicas gerais</h1>
+                        <h1 class="title">
+                            <i class="ti ti-bulb"></i> Dicas gerais
+                        </h1>
                     </section>
                     <section data-auto-animate>
-                        <h1 class="title">Dicas gerais</h1>
+                        <h1 class="title">
+                            <i class="ti ti-bulb"></i> Dicas gerais
+                        </h1>
                         <ul>
                             <li>
                                 Não use <em>strings</em> literais para representar estados, tipos e afins
@@ -1066,17 +1043,7 @@
                                 </ul>
                             </li>
                             <li>
-                                Para refatorar funcionalidades complexas e/ou grandes, crie
-                                <a href="https://github.com/somosyampi/curso-testes/blob/main/docs/03-tdd-coverage-e2e.html"
-                                   target="_blank" rel="noopener">Testes E2E</a>
-                            </li>
-                            <li>
-                                Para facilitar o manuseio de requisições e seus estados de "carregando" e "erro", use
-                                pacotes como o <a href="https://www.npmjs.com/package/@tanstack/vue-query"
-                                                  target="_blank" rel="noopener">vue-query</a>, ou crie sua própria
-                                função com a <a
-                                    href="https://vuejs.org/guide/reusability/composables.html#async-state-example"
-                                    target="_blank" rel="noopener">Composable API</a>
+                                Para refatorar funcionalidades complexas e/ou grandes, crie <b>Testes E2E</b>
                             </li>
                         </ul>
                     </section>
@@ -1084,10 +1051,14 @@
 
                 <section> <!-- Referências -->
                     <section data-auto-animate data-auto-animate-restart>
-                        <h1 class="title">Referências</h1>
+                        <h1 class="title">
+                            <i class="ti ti-bookmarks"></i> Referências
+                        </h1>
                     </section>
                     <section data-auto-animate>
-                        <h1 class="title">Referências</h1>
+                        <h1 class="title">
+                            <i class="ti ti-bookmarks"></i> Referências
+                        </h1>
                         <ul>
                             <li>
                                 <a href="http://www.eduardopires.net.br/2015/01/solid-teoria-e-pratica/" target="_blank" rel="noopener">
@@ -1134,8 +1105,10 @@
                 </section> <!-- Referências -->
 
                 <section id="thanks"> <!-- Obrigado -->
-                    <div>
-                        <h1 class="title">Obrigado!</h1>
+                    <div class="text-center">
+                        <h1 class="title">
+                            <i class="ti ti-heart-filled"></i> Obrigado!
+                        </h1>
                     </div>
                     <div class="about-me-links">
                         <a href="https://viniciuscampitelli.com" target="_blank" rel="noopener">
@@ -1233,6 +1206,15 @@
 
         <script src="reveal.js/dist/reveal.js"></script>
         <script src="reveal.js/plugin/highlight/highlight.js"></script>
-        <script src="assets/app.js"></script>
+        <script>
+            Reveal.initialize({
+                hash: true,
+                mouseWheel: false,
+                overview: false,
+                history: true,
+                plugins: [RevealHighlight],
+                slideNumber: 'c/t',
+            });
+        </script>
     </body>
 </html>
