@@ -2,7 +2,7 @@
   --r-background-color: #424b54;
   --r-block-margin: 10px;
   --r-code-font: "JetBrains Mono", monospace;
-  --r-heading-color: #979edb;
+  --r-heading-color: #80A4ED;
   --r-heading-font-weight: 600;
   --r-heading-font: var(--r-main-font);
   --r-heading-letter-spacing: -0.05em;
@@ -13,7 +13,7 @@
   --r-link-color-hover: #eda7a5;
   --r-link-color-dark: #744947;
   --link-color-alt: #2c223c;
-  --r-main-color: #c3b7d3;
+  --r-main-color: #e7e2ed;
   --r-main-font-size: 28px;
   --r-main-font: "Fira Sans", sans-serif;
   --border-radius: 5px;
@@ -30,10 +30,27 @@
   --r-heading1-size: 2.5em;
   --r-heading-margin: 0 0 10px 0;
 }
+#first-slide > h1 > span {
+  color: var(--r-main-color);
+  position: relative;
+  font-style: italic;
+  padding: 0 0.15em 0 0.1em;
+}
+#first-slide > h1 > span:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 0;
+  bottom: 5px;
+  left: 0;
+  background-color: var(--r-heading-color);
+  transform: skewX(-9deg);
+  z-index: -1;
+}
 #first-slide > h2 {
-  --r-heading2-size: 1em;
+  --r-heading2-size: 1.15em;
   --r-heading-font-weight: 600;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 /* Sobre mim */
@@ -122,7 +139,7 @@ h1:not(:last-child):not(.title) {
   --r-heading-margin: 0;
   --r-heading-font-weight: 500;
   --r-heading-letter-spacing: -1.4px;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 /* Código */
