@@ -2,23 +2,23 @@
   --r-background-color: #424b54;
   --r-block-margin: 10px;
   --r-code-font: "JetBrains Mono", monospace;
-  --r-heading-color: #b0a3d4;
+  --r-heading-color: #979edb;
   --r-heading-font-weight: 600;
   --r-heading-font: var(--r-main-font);
   --r-heading-letter-spacing: -0.05em;
   --r-heading-margin: 0 0 30px 0;
   --r-heading-text-transform: normal;
   --r-heading1-size: 2em;
-  --r-link-color: #e1ce7a;
-  --r-link-color-hover: #b4a562;
-  --r-link-color-dark: #877c49;
+  --r-link-color: #e8918e;
+  --r-link-color-hover: #eda7a5;
+  --r-link-color-dark: #744947;
   --link-color-alt: #2c223c;
-  --r-main-color: #cebacf;
+  --r-main-color: #c3b7d3;
   --r-main-font-size: 28px;
   --r-main-font: "Fira Sans", sans-serif;
   --border-radius: 5px;
-  --color-muted: #7b8187;
-  --color-code-inline: #db3069;
+  --color-muted: #e1dbe9;
+  --color-code-inline: #e1ce7a;
   --code-background: #21262a;
 }
 
@@ -237,7 +237,7 @@ h1 > .ti,
 h2 > .ti {
   display: inline-block;
   margin-left: -1.15em;
-  color: var(--r-link-color);
+  color: var(--color-code-inline);
 }
 .invert {
   transform: scale(-1, 1);
